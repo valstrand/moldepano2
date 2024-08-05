@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 let areaCell = row.insertCell(1);
                 let heightCell = row.insertCell(2);
 
-                nameCell.textContent = mountain.name;
-                areaCell.textContent = mountain.area;
-                heightCell.textContent = mountain.height;
+                nameCell.textContent = mountain.Navn;
+                areaCell.textContent = mountain.Område;
+                heightCell.textContent = mountain.Høyde;
             });
         })
         .catch(error => console.error('Error fetching the mountains data:', error));
