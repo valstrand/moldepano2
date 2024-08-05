@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const tableBody = document.getElementById('mountainTable').getElementsByTagName('tbody')[0];
             data.forEach(mountain => {
                 let row = tableBody.insertRow();
-                let nameCell = row.insertCell(0);
-                let areaCell = row.insertCell(1);
-                let heightCell = row.insertCell(2);
+                let NavnCell = row.insertCell(0);
+                let OmrådeCell = row.insertCell(1);
+                let HøydeCell = row.insertCell(2);
 
-                nameCell.textContent = mountain.Navn;
-                areaCell.textContent = mountain.Område;
-                heightCell.textContent = mountain.Høyde;
+                NavnCell.textContent = mountain.Navn;
+                OmrådeCell.textContent = mountain.Område;
+                HøydeCell.textContent = mountain.Høyde;
             });
         })
         .catch(error => console.error('Error fetching the mountains data:', error));
